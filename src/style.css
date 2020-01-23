@@ -1,0 +1,19 @@
+body {
+  background-color: #dee2e6;
+}
+
+button {
+  width: 3.25rem
+}
+
+#clear {
+  width: 10.25rem
+}
+
+#zero {
+  width: 6.75rem
+}
+
+#display {
+  width: 13.75rem
+}

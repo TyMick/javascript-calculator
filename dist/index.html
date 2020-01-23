@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - JavaScript calculator</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1"><link rel='stylesheet' href='https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css'><link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<!-- App -->
+<div id="app" class="my-5 text-center"></div>
+
+<!-- Explanation -->
+<div class="container mb-5">
+  <p class="lead font-italic">
+    View this app's source on
+    <a href="#" target="_blank" rel="noopener">GitHub</a> or
+    <a
+      href="https://codepen.io/tywmick/pen/BaBVeVO"
+      target="_blank"
+      rel="noopener"
+      >CodePen</a
+    >.
+  </p>
+
+  <h1 class="mt-4">JavaScript calculator</h1>
+
+  <p>
+    I created this app in fulfillment of
+    <a href="https://freecodecamp.org" target="_blank" rel="noopener"
+      >freeCodeCamp</a
+    >'s Front End Libraries Project
+    <a
+      href="https://www.freecodecamp.org/learn/front-end-libraries/front-end-libraries-projects/build-a-javascript-calculator"
+      target="_blank"
+      rel="noopener"
+      >Build a JavaScript Calculator</a
+    >, using
+    <a href="https://reactjs.org/" target="_blank" rel="noopener">React</a> and
+    <a href="https://getbootstrap.com/" target="_blank" rel="noopener"
+      >Bootstrap</a
+    >. It fulfills the following user stories:
+  </p>
+
+  <ol>
+    <li>
+      My calculator should contain a clickable element containing an
+      <code>=</code> (equal sign) with a corresponding <code>id="equals"</code>.
+    </li>
+    <li>
+      My calculator should contain 10 clickable elements containing one number
+      each from 0-9, with the following corresponding IDs:
+      <code>id="zero"</code>, <code>id="one"</code>, <code>id="two"</code>,
+      <code>id="three"</code>, <code>id="four"</code>, <code>id="five"</code>,
+      <code>id="six"</code>, <code>id="seven"</code>, <code>id="eight"</code>,
+      and <code>id="nine"</code>.
+    </li>
+    <li>
+      My calculator should contain 4 clickable elements each containing one of
+      the 4 primary mathematical operators with the following corresponding IDs:
+      <code>id="add"</code>, <code>id="subtract"</code>,
+      <code>id="multiply"</code>, <code>id="divide"</code>.
+    </li>
+    <li>
+      My calculator should contain a clickable element containing a
+      <code>.</code> (decimal point) symbol with a corresponding
+      <code>id="decimal"</code>.
+    </li>
+    <li>
+      My calculator should contain a clickable element with an
+      <code>id="clear"</code>.
+    </li>
+    <li>
+      My calculator should contain an element to display values with a
+      corresponding <code>id="display"</code>.
+    </li>
+    <li>
+      At any time, pressing the clear button clears the input and output values,
+      and returns the calculator to its initialized state; 0 should be shown in
+      the element with the id of <code>display</code>.
+    </li>
+    <li>
+      As I input numbers, I should be able to see my input in the element with
+      the id of <code>display</code>.
+    </li>
+    <li>
+      In any order, I should be able to add, subtract, multiply and divide a
+      chain of numbers of any length, and when I hit <code>=</code>, the correct
+      result should be shown in the element with the id of <code>display</code>.
+    </li>
+    <li>
+      When inputting numbers, my calculator should not allow a number to begin
+      with multiple zeros.
+    </li>
+    <li>
+      When the decimal element is clicked, a <code>.</code> should append to the
+      currently displayed value; two <code>.</code> in one number should not be
+      accepted.
+    </li>
+    <li>
+      I should be able to perform any operation (+, -, *, /) on numbers
+      containing decimal points.
+    </li>
+    <li>
+      If 2 or more operators are entered consecutively, the operation performed
+      should be the last operator entered (excluding the negative (-) sign). For
+      example, if <code>5 + * 7 =</code> is entered, the result should be
+      <code>35</code> (i.e. 5 * 7); if <code>5 * - 5 =</code> is entered, the
+      result should be <code>-25</code> (i.e. 5 x (-5)).
+    </li>
+    <li>
+      Pressing an operator immediately following <code>=</code> should start a
+      new calculation that operates on the result of the previous evaluation.
+    </li>
+    <li>
+      My calculator should have several decimal places of precision when it
+      comes to rounding (note that there is no exact standard, but you should be
+      able to handle calculations like <code>2 / 7</code> with reasonable
+      precision to at least 4 decimal places).
+    </li>
+  </ol>
+</div>
+<!-- partial -->
+  <script src='https://unpkg.com/react@16/umd/react.production.min.js'></script>
+<script src='https://unpkg.com/react-dom@16/umd/react-dom.production.min.js'></script><script  src="./script.js"></script>
+
+</body>
+</html>
